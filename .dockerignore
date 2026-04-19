@@ -9,11 +9,6 @@
 *.md
 HELP.md
 
-# Maven
-.mvn
-mvnw
-mvnw.cmd
-
 # Tests
 src/test
 target
