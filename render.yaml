@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: banking-api
+    env: docker
+    dockerfilePath: Dockerfile
+    dockerContext: .
+    envVars:
+      - key: MYSQL_URL
+        value: mysql://avnadmin:${MYSQL_PASSWORD}@mysql-6efc9e1-loic6350-5059.d.aivencloud.com:27121/defaultdb?ssl-mode=REQUIRED
+      - key: MYSQL_USER
+        value: avnadmin
+      - key: MYSQL_PASSWORD
+        sync: false # Must be set manually in Render dashboard
+    healthCheckPath: /actuator/health
+    healthCheckTimeout: 60
+    healthCheckInterval: 30
+    autoDeploy: true

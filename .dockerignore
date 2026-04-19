@@ -1,0 +1,32 @@
+# .dockerignore - Exclure les fichiers inutiles de l'image Docker
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+HELP.md
+
+# Maven
+.mvn
+mvnw
+mvnw.cmd
+
+# Tests
+src/test
+target
+
+# IDE
+.idea
+.vscode
+*.iml
+
+# Logs
+*.log
+
+# Autres
+docker-compose*.yml
+Dockerfile
+.dockerignore
