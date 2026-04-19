@@ -9,4 +9,5 @@ public interface IAccountService {
     Account createAccount(CreateAccountRequest request);
     List<Account> getAllAccounts();
     Account getAccountById(Long id);
+    List<Account> getAccountsByClientId(Long clientId);
 }

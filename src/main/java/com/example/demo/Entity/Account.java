@@ -29,6 +29,10 @@ public class Account {
     @Column(nullable = false)
     private LocalDateTime createdAt;
 
+    @ManyToOne
+    @JoinColumn(name = "client_id")
+    private Client client;
+
     public Account(String name, String currency, BigDecimal solde) {
         this.name = name;
         this.currency = currency;

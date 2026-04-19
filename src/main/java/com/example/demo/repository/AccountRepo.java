@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AccountRepo extends JpaRepository<Account, Long> {
+    java.util.List<Account> findByClientId(Long clientId);
 }

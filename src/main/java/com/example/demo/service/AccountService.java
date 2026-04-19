@@ -42,4 +42,9 @@ public class AccountService implements IAccountService {
         return accountRepo.findById(id)
                 .orElseThrow(() -> new NotfoundException("Compte introuvable avec l'id : " + id));
     }
+
+    @Override
+    public List<Account> getAccountsByClientId(Long clientId) {
+        return accountRepo.findByClientId(clientId);
+    }
 }
