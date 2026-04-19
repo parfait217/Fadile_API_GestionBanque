@@ -17,7 +17,7 @@ public class OpenApiConfig {
                         .version("1.0")
                         .description("Interface Swagger pour tester l'API de gestion des comptes, dépôts et retraits.")
                         .contact(new Contact()
-                                .name("Support API")
-                                .email("support@exemple.com")));
+                                .name("Arouna Fadile")
+                                .email("fadile@exemple.com")));
     }
 }
